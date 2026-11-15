@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F8F9FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Swipe Screenshot"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#212529"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: OFF"
+        android:textSize="16sp"
+        android:textColor="#6C757D"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Button 1: TURN ON Swipe screenshot -->
+    <Button
+        android:id="@+id/btnTurnOn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="TURN ON Swipe screenshot"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#0D6EFD"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Button 2: TURN OFF Swipe screenshot -->
+    <Button
+        android:id="@+id/btnTurnOff"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="TURN OFF Swipe screenshot"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#6C757D"
+        android:textColor="#FFFFFF"
+        android:enabled="false" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Note: Enabling this feature requires granting Accessibility Service permission so the app can trigger the system screenshot action."
+        android:textSize="13sp"
+        android:textColor="#868E96" />
+
+</LinearLayout>
